@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+Route::get('/periodo','App\Http\Controllers\PeriodoController@index');
+Route::get('/modulo','App\Http\Controllers\ModuloController@index');
+Route::get('/curso','App\Http\Controllers\CursoController@index');
+Route::get('/atraso','App\Http\Controllers\AtrasoController@index');
