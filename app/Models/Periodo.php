@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Periodo extends Model
 {
     protected $table = "tbPeriodo";
+    public $filable = ['idPeriodo', 'periodo'];
     public $timestamps = false;
     
 }
