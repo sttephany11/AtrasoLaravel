@@ -13,16 +13,18 @@ class Alunos extends Authenticatable
 {
     use HasApiTokens, Notifiable, HasFactory;
 
+    public $timestamps = false;
+
     protected $table = 'tbalunos';
 
     protected $fillable = [
-        'idContratante',
+        'id',
         'nome',
+        'curso',
         'password',
         'rm',
         'periodo',
         'modulo',
-
     ];
  /**
      * The attributes that should be hidden for serialization.

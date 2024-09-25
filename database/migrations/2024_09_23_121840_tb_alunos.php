@@ -17,7 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('curso');
-            $table->string('entrada');
+            $table->string('password', 255); // Coluna para a senha
+            $table->string('rm'); // Adicionando coluna RM
+            $table->string('periodo'); // Adicionando coluna Período
+            $table->string('modulo'); // Adicionando coluna Módulo
         });
     }
 
