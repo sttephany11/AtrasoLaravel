@@ -28,7 +28,7 @@ Route::get('/curso','App\Http\Controllers\CursoController@index');
 Route::get('/atraso','App\Http\Controllers\AtrasoController@index');
 Route::get('/alunos' ,'App\Http\Controllers\AlunosController@index') ;
 
-Route::post('/qrcodePost',[QrCodeController::class, 'store']);
+Route::post('/qrcode',[QrCodeController::class, 'store']);
 
 Route::post('/alunos' ,[ControllerAluno::class, 'storeApi']) ;
 Route::post('/auth' ,[AlunosController::class, 'auth']) ;
